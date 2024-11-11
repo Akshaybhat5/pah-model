@@ -246,11 +246,11 @@ def trend_analysis():
     
     # Customize the legend text color
         legend=dict(
-            font=dict(color='white')  # Set the legend text color
+            font=dict(color='black')  # Set the legend text color
         ),
 
-        plot_bgcolor='#08182E',  # Background behind the plot
-        paper_bgcolor='#08182E',  # Background behind the whole chart
+        plot_bgcolor='#FFFFFF',  # Background behind the plot
+        paper_bgcolor='#FFFFFF',  # Background behind the whole chart
     )
 
 # Show the plot
