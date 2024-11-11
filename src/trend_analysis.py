@@ -46,7 +46,7 @@ def display_result_animation():
     # Simulating a loading animation
     animation = ["Analyzing.", "Analyzing..", "Analyzing...", "Analyzing....", "Analyzing....."]
     for i in range(5):
-        placeholder.markdown(f"<h3 style='font-size:24px; color: white;'>{animation[i % len(animation)]}</h3>", unsafe_allow_html=True)
+        placeholder.markdown(f"<h3 style='font-size:24px; color: black;'>{animation[i % len(animation)]}</h3>", unsafe_allow_html=True)
 
         time.sleep(0.5)
     placeholder.empty()
@@ -174,7 +174,7 @@ def trend_analysis():
             x=metadata_df['Documents'], 
             y=metadata_df['Outcome Value'], 
             mode='lines',  # Just lines connecting all points
-            line=dict(color='white'),  # Line color (gray to avoid conflict with categories)
+            line=dict(color='black'),  # Line color (gray to avoid conflict with categories)
             name='Line Connecting All Points',
             showlegend=False,
             hoverinfo='none'
@@ -204,27 +204,27 @@ def trend_analysis():
             arrowhead=3,
             ax=20,
             ay=-30,
-            font=dict(color='yellow'),  # Change annotation text color (labels)
-            arrowcolor='yellow'  # Change arrow color
+            font=dict(color='blue'),  # Change annotation text color (labels)
+            arrowcolor='black'  # Change arrow color
             )
 
 # Step 4: Customize layout (removing gridlines and axis lines)
         fig.update_layout(
             title={
                 'text': "Document Trend Analysis",
-                'font': {'size': 22, 'color': 'white'},  # Title font color and size
+                'font': {'size': 22, 'color': 'black'},  # Title font color and size
             },
         xaxis_title={
             'text': "Document Name",
-            'font': {'size': 18, 'color': 'white'},  # X-axis title font color and size
+            'font': {'size': 18, 'color': 'black'},  # X-axis title font color and size
         },
         yaxis_title={
             'text': "Outcome",
-            'font': {'size': 18, 'color': 'white'},  # Y-axis title font color and size
+            'font': {'size': 18, 'color': 'black'},  # Y-axis title font color and size
         },
         legend_title={
             'text': "Document Outcome",
-            'font': {'size': 14, 'color': 'white'},  # Legend title font color
+            'font': {'size': 14, 'color': 'black'},  # Legend title font color
         },
     
     # Customizing the axis tick labels color
@@ -232,7 +232,7 @@ def trend_analysis():
             showgrid=False, 
             zeroline=False, 
             showline=False, 
-            tickfont=dict(color='white'),
+            tickfont=dict(color='black'),
             categoryorder='array',
             categoryarray=metadata_df['Documents'].tolist()
         ),
@@ -241,7 +241,7 @@ def trend_analysis():
             zeroline=False, 
             showline=False, 
             tickvals=[0, 1, 2, 3],
-            tickfont=dict(color='white')  # Y-axis tick labels color
+            tickfont=dict(color='black')  # Y-axis tick labels color
         ),
     
     # Customize the legend text color
