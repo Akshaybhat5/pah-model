@@ -69,10 +69,13 @@ jobs:
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_DD4FC11250CD4BACB79F36D18BB47336 }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_220A68920C92498597AACAF6FF144E52 }}
 
+
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
           app-name: 'pah-model-classification'
           slot-name: 'Production'
+        env:
+          STREAMLIT_CONFIG: "/home/site/wwwroot/.streamlit/config.toml"
           
