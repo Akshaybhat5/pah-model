@@ -45,7 +45,7 @@ def display_result_animation():
     # Simulating a loading animation
     animation = ["Analyzing.", "Analyzing..", "Analyzing...", "Analyzing....", "Analyzing....."]
     for i in range(5):  # Loop for animation
-        placeholder.markdown(f"<h3 style='font-size:24px; color: white;'>{animation[i % len(animation)]}</h3>", unsafe_allow_html=True)
+        placeholder.markdown(f"<h3 style='font-size:24px; color: black;'>{animation[i % len(animation)]}</h3>", unsafe_allow_html=True)
         time.sleep(0.5)
     placeholder.empty()
 
