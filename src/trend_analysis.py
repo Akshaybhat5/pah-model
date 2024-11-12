@@ -276,25 +276,25 @@ def trend_analysis():
                                                             title=alt.TitleParams(
                                                                 text="Document Confidence Breakdown",
                                                                 fontSize=20,
-                                                                color='white',
+                                                                color='black',
                                                                 subtitle="Outcome by Document"
                                                             ),
                                                             width=600,
                                                             height=400,
-                                                            background='#08182E',  # Chart background color
+                                                            background='#FFFFFF',  # Chart background color
                                                             padding={'top': 20, 'bottom': 20, 'left': 20, 'right': 20}
                                                             ).configure_axis(
-                                                                labelColor='white',
-                                                                titleColor='white',
+                                                                labelColor='black',
+                                                                titleColor='black',
                                                                 grid=False,
                                                                 domain=False
                                                             ).configure_legend(
-                                                                titleColor='white',
-                                                                labelColor='white'
+                                                                titleColor='black',
+                                                                labelColor='black'
                                                             ).configure_title(
                                                                 fontSize=24,
                                                                 font='Arial',
-                                                                color='white'
+                                                                color='black'
                                                             )
             st.altair_chart(chart, use_container_width=True)
 
