@@ -140,21 +140,21 @@ def document_analysis():
                 model_predictions = 'Dependent Learner'
                 final_outcome_text = f"""
                                     <div style="font-size:25px;">
-                                        AI-Generated Label:  <span style="color:#29b5e8; font-weight:bold;">{model_predictions}</span>
+                                        AI-Generated Label:  <span style="color:red; font-weight:bold;">{model_predictions}</span>
                                     </div>
                                 """
             elif model_predictions == "Heutagogy":
                 model_predictions = 'Self-determined Learner'
                 final_outcome_text = f"""
                                     <div style="font-size:25px;">
-                                        AI-Generated Label:  <span style="color:#29b5e8; font-weight:bold;">{model_predictions}</span>
+                                        AI-Generated Label:  <span style="color:green; font-weight:bold;">{model_predictions}</span>
                                     </div>
                                 """
             elif model_predictions == "Andragogy":
                 model_predictions = 'Independent Learner'
                 final_outcome_text = f"""
                                     <div style="font-size:25px;">
-                                        AI-Generated Label:  <span style="color:#29b5e8; font-weight:bold;">{model_predictions}</span>
+                                        AI-Generated Label:  <span style="color:orange; font-weight:bold;">{model_predictions}</span>
                                     </div>
                                 """
                 
@@ -204,21 +204,21 @@ def document_analysis():
                 model_predictions = 'Dependent Learner'
                 final_outcome_text = f"""
                                     <div style="font-size:25px;">
-                                        AI-Generated Label:  <span style="color:#29b5e8; font-weight:bold;">{model_predictions}</span>
+                                        AI-Generated Label:  <span style="color:red; font-weight:bold;">{model_predictions}</span>
                                     </div>
                                 """
             elif model_predictions == "Heutagogy":
                 model_predictions = 'Self-determined Learner'
                 final_outcome_text = f"""
                                     <div style="font-size:25px;">
-                                        AI-Generated Label:  <span style="color:#29b5e8; font-weight:bold;">{model_predictions}</span>
+                                        AI-Generated Label:  <span style="color:green; font-weight:bold;">{model_predictions}</span>
                                     </div>
                                 """
             elif model_predictions == "Andragogy":
                 model_predictions = 'Independent Learner'
                 final_outcome_text = f"""
                                     <div style="font-size:25px;">
-                                        AI-Generated Label:  <span style="color:#29b5e8; font-weight:bold;">{model_predictions}</span>
+                                        AI-Generated Label:  <span style="color:orange; font-weight:bold;">{model_predictions}</span>
                                     </div>
                                 """
     
